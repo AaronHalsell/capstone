@@ -1,3 +1,9 @@
+<script>
+    export default {
+        name: 'navbar-view',
+    }
+</script>
+
 <template>
     <nav>
         <div>
@@ -17,8 +23,3 @@
 
 </template>
 
-<script>
-    export default {
-        name: 'navbar-view',
-    }
-</script>

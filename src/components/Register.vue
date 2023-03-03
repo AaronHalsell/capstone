@@ -21,7 +21,7 @@
         },
         methods: {
             async handleSubmit() {
-                const response = await axios.post('http://localhost:4002/api/signup', {
+                await axios.post('http://localhost:4002/api/signup', {
                     firstName: this.firstName,
                     lastName: this.lastName,
                     email: this.email,
@@ -35,7 +35,6 @@
                     address2: this.address2
                 });
 
-                console.log(response);
                 this.$router.push('/login')
             }
         }
